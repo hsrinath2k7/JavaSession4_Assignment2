@@ -1,0 +1,68 @@
+// Print Arrays
+
+import java.util.Scanner;
+
+
+
+public class SortedArray {
+	
+	static int n;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+System.out.print("Enter a value to print in reverse sequence: ");
+		
+		// Get input from user for array location
+		Scanner arrsc = new Scanner(System.in);
+		
+		n = arrsc.nextInt();
+		
+		//Declaring the array object and initializing by assigning the variable
+		int [] arry = new int[n];
+		
+		
+		
+		
+		for (int i =0  ; i< arry.length ;i++)
+		{	
+			System.out.print("Enter the values to store in the array of " + i + ": ");
+			
+			arry[i] = arrsc.nextInt();
+			
+					
+		}
+				
+		System.out.println();
+		
+		for (int i =0  ; i< arry.length ;i++)
+		{
+			System.out.print(" Array of " + i + ": ");
+	        System.out.print(arry[i] + "\n");
+		
+		}
+		 
+		
+		
+
+	}
+
+}
+
+/* Ouput
+
+Enter a value to assign Array size: 5
+Enter the values to store in the array of 0: 6
+Enter the values to store in the array of 1: 39
+Enter the values to store in the array of 2: 5648
+Enter the values to store in the array of 3: 593
+Enter the values to store in the array of 4: 25
+
+ Array of 0: 6
+ Array of 1: 39
+ Array of 2: 5648
+ Array of 3: 593
+ Array of 4: 25
+
+*/
